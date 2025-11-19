@@ -25,9 +25,10 @@ app.use(cors({
     'http://localhost:5173', // Local development
     'http://localhost:3000', // Alternative local port
     'http://localhost:4173', // Vite preview
-    process.env.CLIENT_ORIGIN, // Environment variable for frontend URL
+    'https://crop-mate-4fut.vercel.app', // Your frontend URL
     'https://crop-mate-eight.vercel.app', // Current backend URL (if needed)
-    /\.vercel\.app$/ // Allow all Vercel apps (for your frontend)
+    process.env.CLIENT_ORIGIN, // Environment variable for additional URLs
+    /\.vercel\.app$/ // Allow all Vercel apps
   ],
   credentials: true
 }));
