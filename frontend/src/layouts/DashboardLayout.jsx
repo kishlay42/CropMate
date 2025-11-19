@@ -3,6 +3,7 @@ import DesktopSidebar from "@/layouts/DesktopSidebar";
 import MobileBottomNav from "@/layouts/MobileBottomNav";
 import Topbar from "@/layouts/Topbar";
 import { useSidebarStore } from "@/state/useSidebarStore";
+import TranslateButton from "../components/TranslateButton";
 
 export default function DashboardLayout() {
   const { isOpen } = useSidebarStore();
@@ -24,6 +25,13 @@ export default function DashboardLayout() {
         <main className="p-4 md:p-6 pt-16 md:pt-20"> 
           <Outlet />
         </main>
+      </div>
+
+      {/* Floating Translate Button */}
+      <div className="fixed bottom-24 md:bottom-6 right-4 z-40">
+        <div className="bg-white shadow-lg rounded-lg p-2 border">
+          <TranslateButton />
+        </div>
       </div>
 
       {/* Mobile bottom nav */}

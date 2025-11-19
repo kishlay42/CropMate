@@ -193,9 +193,10 @@ export default function Diagnose() {
       {previewUrl && !diagnosis && (
         <Button
           onClick={runDiagnosis}
-          className="w-full mt-2 bg-primary hover:bg-green-800 text-white text-md font-semibold"
+          disabled={loading}
+          className="w-full mt-2 bg-primary hover:bg-green-800 text-white text-md font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Run Diagnosis
+          {loading ? "Running Diagnosis..." : "Run Diagnosis"}
         </Button>
       )}
 
