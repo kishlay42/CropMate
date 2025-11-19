@@ -21,7 +21,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'https://crop-mate-eight.vercel.app', // Your frontend URL
+  origin: [
+    'http://localhost:5173', // Local development
+    'http://localhost:3000', // Alternative local port
+    process.env.CLIENT_ORIGIN || 'https://your-frontend-name.vercel.app', // Production frontend URL
+    'https://crop-mate-eight.vercel.app' // Current production URL
+  ],
   credentials: true
 }));
 app.use(json()); // Parse JSON
