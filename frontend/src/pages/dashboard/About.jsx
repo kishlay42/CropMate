@@ -7,6 +7,7 @@ import {
   Sparkles,
   Github,
   Instagram,
+  Linkedin,
 } from "lucide-react";
 import Faq from "@/components/Faq";
 
@@ -141,12 +142,12 @@ export default function About() {
       <section className="bg-card rounded-lg py-16 text-center">
         <h2 className="text-3xl font-bold mb-4">👋 Meet the Developer</h2>
         <p className="text-lg max-w-xl mx-auto mb-6 text-muted-foreground">
-          Hi, I’m <span className="font-semibold text-[#103713]">Tanmaya Panigrahi</span> — a
+          Hi, I’m <span className="font-semibold text-[#103713]">Kishlay Bhaskar</span> — a
           tech enthusiast on a mission to simplify agriculture through AI.
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="https://github.com/tanmaya-panigrahi"
+            href="https://github.com/kishlay42"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-full text-sm font-medium transition hover:bg-[#4e6f2c]"
@@ -154,12 +155,12 @@ export default function About() {
             <Github className="h-5 w-5" /> GitHub
           </a>
           <a
-            href="https://www.instagram.com/_tanmay_021_/"
+            href="https://www.linkedin.com/in/kishlaybhaskar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-full text-sm font-medium transition hover:bg-[#4e6f2c]"
           >
-            <Instagram className="h-5 w-5" /> Instagram
+            <Linkedin className="h-5 w-5" /> LinkedIn
           </a>
         </div>
 
